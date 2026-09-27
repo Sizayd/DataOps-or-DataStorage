@@ -1,0 +1,18 @@
+# Copier ce fichier vers :
+#   Windows : C:\Users\<votre_utilisateur>\.dbt\profiles.yml
+#   Mac/Linux : ~/.dbt/profiles.yml
+#
+# (Pour l'exécution via Airflow/Docker, voir .dbt/profiles.yml à la racine
+# du repo, qui utilise le chemin absolu /opt/airflow/project/... - TP5)
+
+dataops_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: sqlite
+      threads: 1
+      database: dataops
+      schema: main
+      schemas_and_paths:
+        main: "../database/dataops.db"
+      schema_directory: "../database"

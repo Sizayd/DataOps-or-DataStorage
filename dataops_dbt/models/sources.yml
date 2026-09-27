@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: staging
+    schema: main
+    tables:
+      - name: stg_blob_files
+        description: "Table de staging chargée depuis Azurite Blob Storage (TP2)."

@@ -1,0 +1,7 @@
+Ce dossier accueille la base SQLite générée localement :
+
+    database/dataops.db
+
+Elle est créée automatiquement par `scripts/load_blob_to_sql.py` (TP2) et
+alimentée par les modèles dbt (TP3). Le fichier `.db` n'est pas versionné
+(voir .gitignore) car c'est un artefact généré, propre à chaque exécution.

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Base de données générée (TP2/TP3)
+database/*.db
+database/*.db-journal
+
+# dbt
+dataops_dbt/target/
+dataops_dbt/dbt_packages/
+dataops_dbt/logs/
+
+# Airflow - fichiers générés localement / téléchargés par setup-airflow.ps1
+airflow/docker-compose.yaml
+airflow/.env
+airflow/logs/
+airflow/plugins/
+airflow/config/
+airflow/dags/__pycache__/
+
+# Divers
+.DS_Store

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: analytics_messages
+    description: "Messages valides (non nuls) prêts pour l'analyse."
+    columns:
+      - name: source_file
+        tests:
+          - unique
+          - not_null
+      - name: message
+        tests:
+          - not_null
